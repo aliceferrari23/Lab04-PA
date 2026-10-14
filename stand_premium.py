@@ -9,5 +9,4 @@ class StandPremium(Stand):
         return self.prezzo_base * 1.30
 
     def __str__(self):
-        return (f"{self.codice}: Premium | {self.superficie} mq - Padiglione {self.padiglione} - "
-                f"Prezzo {self.calcola_prezzo():.2f}€ - Posizione: {self.posizione} - {self.stato_str()}")
+        return f"{self.codice}: Premium | {self.superficie} mq - Padiglione {self.padiglione} - Prezzo {self.calcola_prezzo():.2f}€ - Posizione: {self.posizione} - {self.stato_str()}"

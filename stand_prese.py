@@ -9,4 +9,4 @@ class StandPrese(Stand):
         return self.prezzo_base*(1+0.07*self.prese_extra)
 
     def __str__(self):
-        return f"{self.codice}: Prese Extra | {self.superficie} mq - Padiglione {self.padiglione} - Prezzo {self.calcola_prezzo()}€ - Prese aggiuntive: {self.prese_extra} - {self.stato_str()}"
+        return f"{self.codice}: Prese Extra | {self.superficie} mq - Padiglione {self.padiglione} - Prezzo {self.calcola_prezzo():.2f}€ - Prese aggiuntive: {self.prese_extra} - {self.stato_str()}"
